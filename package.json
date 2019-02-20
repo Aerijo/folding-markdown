@@ -1,0 +1,37 @@
+{
+  "name": "folding-markdown",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Code folding support for markdown",
+  "keywords": [
+    "markdown",
+    "folding"
+  ],
+  "bugs": {
+    "url": "https://github.com/Aerijo/folding-markdown/issues"
+  },
+  "author": "Benjamin Gray",
+  "repository": "https://github.com/Aerijo/folding-markdown",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.34.0 <2.0.0"
+  },
+  "activationHooks": [
+    "source.gfm:root-scope-used",
+    "text.md:root-scope-used"
+  ],
+  "configSchema": {
+    "foldTrailingSectionWhitespace": {
+      "description": "Enable to fold everything up until the next section, including trailing whitespace.",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providedServices": {
+    "folding.provider": {
+      "versions": {
+        "0.0.0": "provideFolding"
+      }
+    }
+  }
+}
