@@ -1,7 +1,7 @@
 {
   "name": "folding-markdown",
   "main": "./lib/main",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Code folding support for markdown",
   "keywords": [
     "markdown",
