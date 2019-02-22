@@ -20,6 +20,12 @@
     "source.gfm:root-scope-used",
     "text.md:root-scope-used"
   ],
+  "dependencies": {
+    "atom-package-deps": "5.0.0"
+  },
+  "package-deps": [
+    "atom-folding"
+  ],
   "configSchema": {
     "foldTrailingSectionWhitespace": {
       "description": "Enable to fold everything up until the next section, including trailing whitespace.",
